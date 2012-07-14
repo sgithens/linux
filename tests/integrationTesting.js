@@ -284,70 +284,70 @@ var integrationTestsJSON = {
                 ]
             }
         ]
-    // },
-    // "andrei": {
-    //     "initialState": [
-    //         {
-    //             "type": "gpii.gsettings.get", 
-    //             "data": [
-    //                 {
-    //                     "options": {
-    //                         "schema": "org.gnome.desktop.a11y.applications"
-    //                     },
-    //                     "settings": {
-    //                         "screen-reader-enabled": false
-    //                     }
-    //                 },
-    //                 {
-    //                     "options": {
-    //                         "schema": "org.gnome.desktop.a11y.keyboard"
-    //                     },
-    //                     "settings": {
-    //                         "feature-state-change-beep": false
-    //                     }
-    //                 },
-    //                 {
-    //                     "options": {
-    //                         "schema": "org.gnome.desktop.interface"
-    //                     },
-    //                     "settings": {
-    //                         "text-scaling-factor": 1
-    //                     }
-    //                 }
-    //             ]
-    //         }
-    //     ],
-    //     "loggedInState": [
-    //         {
-    //             "type": "gpii.gsettings.get", 
-    //             "data": [
-    //                 {
-    //                     "options": {
-    //                         "schema": "org.gnome.desktop.a11y.applications"
-    //                     },
-    //                     "settings": {
-    //                         "screen-reader-enabled": true
-    //                     }
-    //                 },
-    //                 {
-    //                     "options": {
-    //                         "schema": "org.gnome.desktop.a11y.keyboard"
-    //                     },
-    //                     "settings": {
-    //                         "feature-state-change-beep": true
-    //                     }
-    //                 },
-    //                 {
-    //                     "options": {
-    //                         "schema": "org.gnome.desktop.interface"
-    //                     },
-    //                     "settings": {
-    //                         "text-scaling-factor": 1
-    //                     }
-    //                 }
-    //             ]
-    //         }
-    //     ]
+    },
+    "andrei": {
+        "initialState": [
+            {
+                "type": "gpii.gsettings.get", 
+                "data": [
+                    {
+                        "options": {
+                            "schema": "org.gnome.desktop.a11y.applications"
+                        },
+                        "settings": {
+                            "screen-reader-enabled": false
+                        }
+                    },
+                    {
+                        "options": {
+                            "schema": "org.gnome.desktop.a11y.keyboard"
+                        },
+                        "settings": {
+                            "feature-state-change-beep": false
+                        }
+                    },
+                    {
+                        "options": {
+                            "schema": "org.gnome.desktop.interface"
+                        },
+                        "settings": {
+                            "text-scaling-factor": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "loggedInState": [
+            {
+                "type": "gpii.gsettings.get", 
+                "data": [
+                    {
+                        "options": {
+                            "schema": "org.gnome.desktop.a11y.applications"
+                        },
+                        "settings": {
+                            "screen-reader-enabled": true
+                        }
+                    },
+                    {
+                        "options": {
+                            "schema": "org.gnome.desktop.a11y.keyboard"
+                        },
+                        "settings": {
+                            "feature-state-change-beep": true
+                        }
+                    },
+                    {
+                        "options": {
+                            "schema": "org.gnome.desktop.interface"
+                        },
+                        "settings": {
+                            "text-scaling-factor": 1
+                        }
+                    }
+                ]
+            }
+        ]
     }
 };
 
