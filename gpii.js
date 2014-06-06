@@ -10,6 +10,8 @@ You may obtain a copy of the License at
 https://github.com/gpii/universal/LICENSE.txt
 */
 
+/* global require */
+
 var fluid = require("universal"),
     kettle = fluid.registerNamespace("kettle");
 
