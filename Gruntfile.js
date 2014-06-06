@@ -106,6 +106,7 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.loadNpmTasks("grunt-shell");
     grunt.loadNpmTasks("grunt-contrib-jshint");
 
     grunt.registerTask("build", "Build the entire GPII", function() {
