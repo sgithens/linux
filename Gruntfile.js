@@ -2,13 +2,21 @@
 GPII Linux Personalization Framework Node.js Bootstrap
 
 Copyright 2014 RFT-US
+Copyright 2014 Inclusive Design Research Centre, OCAD University.
 
 Licensed under the New BSD license. You may not use this file except in
 compliance with this License.
 
 You may obtain a copy of the License at
 https://github.com/gpii/universal/LICENSE.txt
+
+Author:  Steven Githens
+Author:  Joseph Scheuhammer
+
 */
+
+/* global module */
+/* jshint strict: false */
 
 module.exports = function(grunt) {
     var usbListenerDir = "./usbDriveListener";
@@ -26,7 +34,7 @@ module.exports = function(grunt) {
                 return "node-gyp configure build"; 
             }
         };
-    }; 
+    }
 
     function nodeGypCleanShell(dir) {
         return {
@@ -41,7 +49,7 @@ module.exports = function(grunt) {
                 return "node-gyp clean";
             }
         };
-    };
+    }
 
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
@@ -82,10 +90,23 @@ module.exports = function(grunt) {
                     return "node gpii.js";
                 }
             }
+        },
+        jshint: {
+          sources: {
+            src: ["gpii.js", "node_modules/**/*.js"],
+            filter: function(filepath) {
+                return ( (filepath.indexOf ("grunt") === -1) &&
+                         (filepath.indexOf ("linuxDeviceReporter") === -1));
+            }
+          },
+          buildScripts: ["Gruntfile.js"],
+          options: {
+            jshintrc: true
+          }
         }
     });
 
-    grunt.loadNpmTasks("grunt-gpii");
+    grunt.loadNpmTasks("grunt-contrib-jshint");
 
     grunt.registerTask("build", "Build the entire GPII", function() {
         grunt.task.run("gpiiUniversal");
